@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: MoneyForge
+Specification-Vendor: MoneyForgesareus
+Specification-Version: 1
+Implementation-Title: mos
+Implementation-Version: 1.0
+Implementation-Vendor: MoneyForgesareus
+Implementation-Timestamp: 2023-05-03T18:11:58-0600
+
