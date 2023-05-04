@@ -6,6 +6,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkEvent;
+import net.taemourdj.moneyforge.wealth.PlayerWealth;
+import net.taemourdj.moneyforge.wealth.PlayerWealthProvider;
 
 import java.util.function.Supplier;
 
@@ -32,7 +34,11 @@ public class WealthC2SPacket {
             //Notify the player
             player.sendSystemMessage(Component.translatable(MESSAGE_GAIN_WEALTH).withStyle(ChatFormatting.GOLD));
             //Increase player wealth
-
+            player.getCapability(PlayerWealthProvider.PLAYER_WEALTH).ifPresent(wealth -> {
+                wealth.addWealth(1);
+                player.sendSystemMessage(Component.literal("Current wealth: " + wealth.getWealth())
+                        .withStyle(ChatFormatting.GOLD));
+            });
         });
         return true;
     }

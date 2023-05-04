@@ -1,6 +1,53 @@
 {
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2023-05-04 00:03:05 -0600"
+    },
+    "done": true
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:frozen_river": "2023-05-04 00:03:39 -0600",
+      "minecraft:beach": "2023-05-04 00:03:01 -0600",
+      "minecraft:river": "2023-05-04 00:03:22 -0600",
+      "minecraft:snowy_plains": "2023-05-04 00:03:44 -0600",
+      "minecraft:cold_ocean": "2023-05-04 00:03:02 -0600",
       "minecraft:forest": "2023-05-03 23:09:36 -0600",
       "minecraft:plains": "2023-05-03 19:59:32 -0600"
     },
