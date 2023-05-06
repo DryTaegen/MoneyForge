@@ -20,6 +20,9 @@ public class CoinItem extends Item {
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND){
             //increase player wealth
             ModMessages.sendToServer(new WealthC2SPacket());
+            player.getItemInHand(hand).shrink(1);
+
+
         }
 
 

@@ -1,11 +1,7 @@
 package net.taemourdj.moneyforge;
 
-import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,14 +10,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.taemourdj.moneyforge.item.ModItems;
 import net.taemourdj.moneyforge.networking.ModMessages;
-import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MoneyForge.MOD_ID)
 public class MoneyForge
 {
     public static final String MOD_ID = "moneyforge";
-    private static final Logger LOGGER = LogUtils.getLogger();
     
     public MoneyForge()
     {
@@ -43,11 +37,6 @@ public class MoneyForge
 
 
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event){
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS){
-            event.accept((ModItems.COIN));
-        }
-    }
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
