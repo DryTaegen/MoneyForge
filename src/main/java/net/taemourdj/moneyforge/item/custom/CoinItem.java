@@ -16,7 +16,7 @@ public class CoinItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-
+        //If coin is in player's hand and they interact with it
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND){
             //increase player wealth
             ModMessages.sendToServer(new WealthC2SPacket());

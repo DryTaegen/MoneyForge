@@ -16,6 +16,8 @@ import net.taemourdj.moneyforge.wealth.PlayerWealthProvider;
 
 @Mod.EventBusSubscriber(modid = MoneyForge.MOD_ID)
 public class ModEvents {
+
+    //Attaches the wealth value to the player
     @SubscribeEvent
     public static void onAttachCapabilitiesPlayer(AttachCapabilitiesEvent<Entity> event) {
         if(event.getObject() instanceof Player) {
@@ -25,6 +27,8 @@ public class ModEvents {
         }
     }
 
+
+    //If the player dies, the wealth doesn't get reset.
     @SubscribeEvent
     public static void onPlayerCloned(PlayerEvent.Clone event) {
         if(event.isWasDeath()) {

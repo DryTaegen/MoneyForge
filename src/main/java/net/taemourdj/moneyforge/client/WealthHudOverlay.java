@@ -7,10 +7,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.gui.overlay.IGuiOverlay;
 import net.taemourdj.moneyforge.MoneyForge;
 
+
+
+// Feature not fully implimented
 public class WealthHudOverlay {
     private static final ResourceLocation MONEY = new ResourceLocation(MoneyForge.MOD_ID,
             "textures/money/ModItems.png");
 
+    //Render the HUD
     public static final IGuiOverlay HUD_WEALTH = (((gui, poseStack, partialTick, screenWidth, screenHeight) -> {
         int x = screenWidth / 2;
         int y = screenHeight;
